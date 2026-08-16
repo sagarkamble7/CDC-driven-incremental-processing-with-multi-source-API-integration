@@ -1,7 +1,7 @@
 ````markdown
 # CDC-Driven Incremental Processing with Multi-Source API Integration
 
-## 📌 Project Overview
+##  Project Overview
 
 An end-to-end **API-driven Retail Data Lakehouse** built on **Databricks Free Edition** using the Medallion Architecture.
 
@@ -9,7 +9,7 @@ The project integrates data from multiple API sources, performs schema conforman
 
 ---
 
-## 🎯 Business Purpose
+##  Business Purpose
 
 - Integrate retail data from multiple heterogeneous API sources.
 - Create a centralized and reliable retail data platform for analytics.
@@ -21,7 +21,7 @@ The project integrates data from multiple API sources, performs schema conforman
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```text
              ┌──────────────────────┐
@@ -84,7 +84,7 @@ The project integrates data from multiple API sources, performs schema conforman
 
 ---
 
-## 🔄 End-to-End Data Flow
+##  End-to-End Data Flow
 
 ### 1. API Sources
 
@@ -141,7 +141,7 @@ The Silver layer converts heterogeneous API data into clean, conformed datasets.
 
 ---
 
-## ⚡ CDC & Incremental Processing
+## CDC & Incremental Processing
 
 Delta **Change Data Feed (CDF)** is used to identify changes occurring in Silver tables.
 
@@ -190,7 +190,7 @@ CDF records **what changed**, while the watermark records **what the downstream 
 
 ---
 
-# 🏆 Gold Layer
+#  Gold Layer
 
 The Gold layer provides business-ready data using a **Star Schema**.
 
@@ -252,7 +252,7 @@ The fact table uses **as-of joins** against SCD2 dimensions so historical orders
 
 ---
 
-## 🔑 Key Design Decisions
+##  Key Design Decisions
 
 * **Medallion Architecture:** Bronze → Silver → Gold.
 * **Multi-source integration:** Mockaroo + DummyJSON.
@@ -272,7 +272,7 @@ The fact table uses **as-of joins** against SCD2 dimensions so historical orders
 
 ---
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 | Technology                     | Purpose                                        |
 | ------------------------------ | ---------------------------------------------- |
@@ -290,7 +290,7 @@ The fact table uses **as-of joins** against SCD2 dimensions so historical orders
 
 ---
 
-## 📊 Current Data Model
+##  Current Data Model
 
 ### Silver
 
@@ -312,7 +312,7 @@ _pipeline_state   -- CDC watermark/control table
 
 ---
 
-## 🚀 Project Highlights
+##  Project Highlights
 
 * Multi-source API integration.
 * Medallion Lakehouse architecture.
@@ -332,7 +332,7 @@ _pipeline_state   -- CDC watermark/control table
 
 ---
 
-## 🎓 Key Engineering Challenges
+##  Key Engineering Challenges
 
 * Handling inconsistent field names and data formats across APIs.
 * Cleaning malformed source field names such as trailing spaces.
@@ -346,10 +346,14 @@ _pipeline_state   -- CDC watermark/control table
 
 ---
 
-## 📌 Project Outcome
+##  Project Outcome
 
 This project demonstrates an end-to-end **modern data engineering pipeline** that takes heterogeneous API data and transforms it into a governed, incremental, historically accurate analytics model.
 
 The final architecture combines:
 
 **API ingestion → Structured Streaming → Bronze → Silver → CDF → Watermark-driven CDC → SCD2 Dimensions → Star Schema → Business-ready Gold data.**
+
+## Author
+
+**Sagar kamble** — Data Engineer 
