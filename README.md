@@ -1,4 +1,4 @@
-````markdown
+
 # CDC-Driven Incremental Processing with Multi-Source API Integration
 
 ## Project Overview
