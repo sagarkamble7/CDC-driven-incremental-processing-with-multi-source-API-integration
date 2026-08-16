@@ -353,6 +353,3 @@ This project demonstrates an end-to-end **modern data engineering pipeline** tha
 The final architecture combines:
 
 **API ingestion → Structured Streaming → Bronze → Silver → CDF → Watermark-driven CDC → SCD2 Dimensions → Star Schema → Business-ready Gold data.**
-
-```
-```
